@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saber nota</title>
+    <style>
+
+    </style>
+    <script>
+
+var nombre, asignatura, nota1, nota2, nota3, suma ,media 
+
+
+
+var nombre = prompt("dime un nombre");
+var asignatura = prompt("dime una asignatura");
+var nota1 = prompt("dime la nota primera a evaluar");
+nota1 = parseInt(nota1)
+
+var nota2 = prompt("dime la nota segunda a evaluar");
+nota2 = parseInt(nota2)
+
+var nota3 = prompt("dime la nota tercera a evaluar");
+nota3 = parseInt(nota3)
+
+media = ((nota1 + nota2 + nota3) / 3);
+
+document.write("Su nombre es: ");
+document.write(nombre);
+document.write("<br>");
+document.write("Su asignatura es: ");
+document.write(asignatura);
+document.write("<br>");
+document.write("Su primera nota es: ");
+document.write(nota1);
+document.write("<br>");
+document.write("Su segunda nota es: ");
+document.write(nota2);
+document.write("<br>");
+document.write("Su tercera nota es: ");
+document.write(nota3);
+document.write("<br>");
+document.write("Su nota media es: ");
+document.write(media);
+document.write("<br>");
+/* var x=media;*/
+
+switch (true) {
+    case (media>5 && media<8):
+        alert (" Aprobado por nota de 5 a 8 ")
+        
+        break;
+        case (media>9 && media<10):
+        alert (" Sobresaliente mayor de 9 ")
+        
+        break;
+        case (media<5):
+        alert (" Suspendido por nota menor a 5 ")
+        
+        break;
+
+
+    default:
+        break;
+}
+    </script>
+<body>
+    
+
+
+</body>
+</html>
